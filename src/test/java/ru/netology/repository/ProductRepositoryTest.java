@@ -14,12 +14,14 @@ class ProductRepositoryTest {
     private Product third = new Product(3,"name3",300);
     private Product forth = new Product(4,"name4",400);
 
+
     @BeforeEach
     public void setUp() {
         repository.save(first);
         repository.save(second);
         repository.save(third);
         repository.save(forth);
+
 
     }
     @Test
